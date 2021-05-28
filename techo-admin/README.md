@@ -1,23 +1,33 @@
-# Next.js + Tailwind CSS Example
+# Página de Administrador de TECHO
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2.1) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Cómo usar Next.js y Tailwind
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+1. Para crear una app con Tailwind ya configurado: **npx create-next-app -e with-tailwindcss nombre-del-proyecto**
 
-## Deploy your own
+2. Instalar packages: **npm i**
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+3. Para correr el proyecto: ir al directorio del proyecto y correr: **npm run dev**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+4. Para cambiar color de fondo del proyecto (u otras cosas jajaj): ir a styles/globals.css, y cambiar ahí el color del body (o de lo que se quiera cambiar). Eg: 
 
-## How to use
+    body {
+        @apply bg-[#ffffff] text-white
+    }
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+5. Para usar imágenes que no están cargadas en el proyecto (o sea, desde una url) hay que configurar el archivo **"next.config.js"**: agregar el dominio en **domains{images: []}**. Eg:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+    images: {
+        domains: [
+            "www.nicepng.com", "image.tmdb.org"
+        ]
+    }
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+6. Para utilizar las clases de Tailwind es parecido a Bootstrap (Eg:**"mr-5" === margin-right: 5**), aunque tiene cosas diferentes; ver documentación en https://tailwindcss.com/docs
+
+7. Para usar íconos (como el ícono de perfil del usuario): https://heroicons.com/ (**npm install @heroicons/react**) ==> Después se importa el ícono que se quiera usar así **import { UserIcon } from '@heroicons/react/outline'** (puede ser outline o solid)
+
+8. Si se quiere agregar otra página a la aplicación, se crea el archivo en **pages**
+
+9. Si se quiere agregar otro componente a la aplicación, se crea el archivo en **components**
+
+10. Para utilizar rutas se usa **useRouter()** de Next (no lo usé todavía jaja)
