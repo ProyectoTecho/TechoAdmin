@@ -10,7 +10,6 @@ const LogoTecho = () => {
                     width='auto'
                     height='100'
                 />
-
             </div>
         </div>
     )
