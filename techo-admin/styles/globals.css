@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   /*  body {
+        @apply bg-[#ffffff] text-white
+    } */
+    header {
+        @apply  bg-[#449DEF] text-white
+    }
+    button {
+        @apply bg-[#F58454]
+    }
+}
