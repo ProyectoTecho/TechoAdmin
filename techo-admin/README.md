@@ -22,12 +22,16 @@
         ]
     }
 
-6. Para utilizar las clases de Tailwind es parecido a Bootstrap (Eg:**"mr-5" === margin-right: 5**), aunque tiene cosas diferentes; ver documentación en https://tailwindcss.com/docs
+Si no me equivoco ese archivo **next.config.js** es la configuración de webpack (Next usa webpack por detrás). Documentación de webpack **https://webpack.js.org/concepts/**
 
-7. Para usar íconos (como el ícono de perfil del usuario): https://heroicons.com/ (**npm install @heroicons/react**) ==> Después se importa el ícono que se quiera usar así **import { UserIcon } from '@heroicons/react/outline'** (puede ser outline o solid)
+6. Para utilizar las clases de Tailwind es parecido a Bootstrap (Eg:**"mr-5" === margin-right: 5**), aunque tiene cosas diferentes; ver documentación en **https://tailwindcss.com/docs**
+
+7. Para usar íconos (como el ícono de perfil del usuario): **https://heroicons.com/** (**npm install @heroicons/react**) ==> Después se importa el ícono que se quiera usar así **import { UserIcon } from '@heroicons/react/outline'** (puede ser outline o solid)
 
 8. Si se quiere agregar otra página a la aplicación, se crea el archivo en **pages**
 
 9. Si se quiere agregar otro componente a la aplicación, se crea el archivo en **components**
 
 10. Para utilizar rutas se usa **useRouter()** de Next (no lo usé todavía jaja)
+
+11. La carpeta **api** es lo que sería el servidor de Next. Ahí se pueden configurar cosas del backend supongo.
