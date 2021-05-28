@@ -6,13 +6,14 @@ const Navbar = () => {
     return (
         <header className='flex justify-between' >
             <LogoTecho />
-            <div className='pr-5 flex items-center m-5'>
+            <div className=' flex items-center m-5'>
                 <UserIcon
+                    className='group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-125 hover:z-50 mr-4'
                     height='60'
-                    width='auto'
+                    width='60'
                 />
-                <h2 className=' whitespace-nowrap'>Nombre del usuario</h2>
-                <button className='ml-3 rounded whitespace-nowrap' >Log Out</button>
+                <h2 className='whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>Nombre del usuario</h2>
+                <button className='ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5' >Log Out</button>
             </div>
         </header>
     )
