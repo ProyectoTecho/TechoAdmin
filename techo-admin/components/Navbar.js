@@ -5,7 +5,7 @@ import { UserIcon } from '@heroicons/react/outline'
 const Navbar = () => {
     return (
         <header className='flex justify-between' >
-            <LogoTecho />
+            <LogoTecho styles={'group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'}/>
             <div className=' flex items-center m-5'>
                 <UserIcon
                     className='group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-125 hover:z-50 mr-4'
