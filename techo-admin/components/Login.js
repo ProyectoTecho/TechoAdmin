@@ -2,7 +2,7 @@ import LogoTecho from './LogoTecho'
 
 function Login() {
   return (
-    <div className="bg-blue-500 h-screen sm:text-center text-center ">
+    <div className="bg-blue-500 h-screen w-screen sm:text-center text-center ">
 
       <form className="max-w-2xl mx-auto space-y-6 focus-border-teal-500  align-middle">
         <h1 className="text-white text-4xl font-extrabold">ADMIN</h1>
