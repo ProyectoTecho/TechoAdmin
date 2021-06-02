@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-   /*  body {
-        @apply bg-[#ffffff] text-white
-    } */
+    body {
+        @apply bg-blue-500 text-white
+    } 
     header {
         @apply  bg-[#449DEF] text-white
     }
