@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import LogoTecho from './LogoTecho'
 
 function Login() {
   return (
@@ -27,9 +26,7 @@ function Login() {
         </div>
 
       </form>
-      <footer>
-        <Image src="/techo-footer.png" width="auto" height="100" />
-      </footer>
+      <LogoTecho styles={'group cursor-pointer'}/>
     </div>
   );
 }
