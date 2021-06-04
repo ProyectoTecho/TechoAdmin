@@ -1,17 +1,16 @@
 import React from 'react'
+import SidebarButtons from './SidebarButtons'
 
 const Sidebar = () => {
     return (
         <nav >
             <div className='bg-blue-500 h-screen'>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
-                <p className='text-xl'>Este es el sidebar</p>
+            <SidebarButtons title='Header' />
+                <SidebarButtons title='Numeros' />
+                <SidebarButtons title='Captadoras'/>
+                <SidebarButtons title='Form'/>
+                <SidebarButtons title='Donacion única'/>
+                <SidebarButtons title='Argentina'/>
             </div>
 
         </nav>

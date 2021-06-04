@@ -1,6 +1,6 @@
 import Head from 'next/head'
-// import Navbar from '../components/Navbar'
 import Login from '../components/Login'
+import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 
 
