@@ -1,3 +1,4 @@
+
 import SignIn from "./SignIn";
 import LoginFooter from "./LoginFooter";
 import Logintext from "./Logintext";
@@ -40,6 +41,8 @@ export default Login;
         <div>
           <input type="password" placeholder="PASSWORD" className="form-input px-4 py-3 rounded-full 
         border-none" ></input>
+
         </div> */
+
 }
 
