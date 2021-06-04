@@ -1,53 +1,21 @@
-// import { useState, useEffect } from "react";
-// import Image from "next/image";
-// import { loginWithGitHub, onAuthStateChanged } from "../firebase/client";
-
-import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import LoginFooter from "./LoginFooter";
 import Logintext from "./Logintext";
 
 function Login() {
-  // const [user, setUser] = useState(undefined);
-  // console.log(user, "SOY EL USER");
-
-  // useEffect(() => {
-  //   onAuthStateChanged(setUser);
-  // }, []);
-
-  // const handleClick = () => {
-  //   loginWithGitHub()
-  //     .then(setUser)
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  //   console.log(user, "USER LOGUEADO CON GITHUB");
-  // };
-
   return (
     <div className="bg-blue-500 h-screen content-center sm:text-center text-center ">
-
       <form className="max-w-2xl mx-auto space-y-6 focus-border-teal-500  align-middle">
-
         <Logintext />
         <SignIn />
-        <SignUp />
-
       </form>
 
-      <LoginFooter />
-      
+      {/* <LoginFooter /> */}
     </div>
   );
 }
 
 export default Login;
-
-
-
-
-
-
 
 {
   /* arrow no queda CENTRADO */

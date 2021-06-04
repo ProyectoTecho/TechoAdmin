@@ -2,6 +2,7 @@ import Head from 'next/head'
 // import Navbar from '../components/Navbar'
 import Login from '../components/Login'
 
+
 export default function Home() {
   return (
     <div >
@@ -14,6 +15,7 @@ export default function Home() {
 
       {/* <Navbar /> */}
       <Login />
+      
 
     </div>
   )
