@@ -1,11 +1,10 @@
-
 import SignIn from "./SignIn";
 import LoginFooter from "./LoginFooter";
 import Logintext from "./Logintext";
 
 function Login() {
   return (
-    <div className="bg-blue-500 h-screen content-center sm:text-center text-center ">
+    <div className="bg-[#449DEF]  h-screen content-center sm:text-center text-center ">
       <form className="max-w-2xl mx-auto space-y-6 focus-border-teal-500  align-middle">
         <Logintext />
         <SignIn />
@@ -41,8 +40,6 @@ export default Login;
         <div>
           <input type="password" placeholder="PASSWORD" className="form-input px-4 py-3 rounded-full 
         border-none" ></input>
-
         </div> */
-
 }
 

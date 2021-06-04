@@ -1,7 +1,7 @@
 import React from 'react'
 import LogoTecho from './LogoTecho'
 import { UserIcon } from '@heroicons/react/outline'
-import SidebarButtons from './SidebarButtons'
+
 
 const Navbar = () => {
 
@@ -10,18 +10,12 @@ const Navbar = () => {
     } */
 
 
-
     return (
         <header className='flex justify-between' >
             <LogoTecho styles={'group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'} />
             <div className=' flex items-center m-5'>
 
-                <SidebarButtons title='Header' />
-                <SidebarButtons title='Numeros' />
-                <SidebarButtons title='Captadoras'/>
-                <SidebarButtons title='Form'/>
-                <SidebarButtons title='Donacion única'/>
-                <SidebarButtons title='Argentina'/>
+               
 
 
                 <UserIcon

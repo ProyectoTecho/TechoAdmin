@@ -4,13 +4,13 @@
 
 @layer base {
     body {
-        @apply bg-blue-500 text-white
+        @apply bg-[#449DEF] text-white
     } 
     header {
         @apply  bg-[#449DEF] text-white
     }
     button {
-        @apply bg-[#F58454]
+        @apply bg-[#F58454] w-full
     }
 }
 
