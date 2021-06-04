@@ -13,12 +13,12 @@ const Navbar = () => {
         <header className='flex justify-between' >
             <LogoTecho styles={'group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'} />
             <div className=' flex items-center m-5'>
-                <SidebarButtons title='header' />
-                <SidebarButtons title='numeros' />
-                <SidebarButtons title='captadoras'/>
-                <SidebarButtons title='form'/>
-                <SidebarButtons title='donacion única'/>
-                <SidebarButtons title='argentina'/>
+                <SidebarButtons title='Header' />
+                <SidebarButtons title='Numeros' />
+                <SidebarButtons title='Captadoras'/>
+                <SidebarButtons title='Form'/>
+                <SidebarButtons title='Donacion única'/>
+                <SidebarButtons title='Argentina'/>
 
                 <UserIcon
                     className='group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-125 hover:z-50 mr-4'
