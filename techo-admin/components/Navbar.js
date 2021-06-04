@@ -4,6 +4,11 @@ import { UserIcon } from '@heroicons/react/outline'
 import SidebarButtons from './SidebarButtons'
 
 const Navbar = () => {
+/*     const handleLogout () => {
+            función para desloguearse
+    } */
+
+
     return (
         <header className='flex justify-between' >
             <LogoTecho styles={'group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'} />
