@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Login from '../components/Login'
 import Sidebar from '../components/Sidebar'
+
 
 export default function Home() {
   return (
@@ -15,11 +16,12 @@ export default function Home() {
 
       <Navbar />
       <div className='relative min-h-screen flex  '> {/* esto sea width 100% */}
-
         <Sidebar  /> {/* esto 30% */}
-        <Login /> {/* esto 70% */}
-
       </div>
+      {/* <Navbar /> */}
+      <Login />
+      
+
 
     </div>
   )
