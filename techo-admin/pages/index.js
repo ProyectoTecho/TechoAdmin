@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Login from '../components/Login'
+
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
         <title>TECHO - Admin</title>
       </Head>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Login />
+      
 
     </div>
   )
