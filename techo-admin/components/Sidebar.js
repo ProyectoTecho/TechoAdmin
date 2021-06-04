@@ -4,8 +4,8 @@ import SidebarButtons from './SidebarButtons'
 const Sidebar = () => {
     return (
         <nav >
-            <div className='bg-blue-500 h-screen'>
-            <SidebarButtons title='Header' />
+            <div className='bg-[#449DEF] h-screen w-36 mt-5  '>
+                <SidebarButtons title='Header' />
                 <SidebarButtons title='Numeros' />
                 <SidebarButtons title='Captadoras'/>
                 <SidebarButtons title='Form'/>

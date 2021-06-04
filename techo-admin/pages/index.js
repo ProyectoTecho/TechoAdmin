@@ -15,12 +15,10 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <div className='relative min-h-screen flex  '> {/* esto sea width 100% */}
-        <Sidebar  /> {/* esto 30% */}
+      <div className='relative min-h-screen flex '> 
+        <Sidebar />
+        <Login />
       </div>
-      {/* <Navbar /> */}
-      <Login />
-      
 
 
     </div>
