@@ -4,7 +4,7 @@ import SidebarButtons from './SidebarButtons'
 const Sidebar = () => {
     return (
         <nav >
-            <div className='bg-[#449DEF] h-screen w-36 mt-5  '>
+            <div className='bg-[#449DEF] space-y-8 mr-5 ml-5 h-screen w-36 mt-5  '>
                 <SidebarButtons title='Header' />
                 <SidebarButtons title='Numeros' />
                 <SidebarButtons title='Captadoras'/>
