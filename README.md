@@ -36,7 +36,7 @@ Si no me equivoco ese archivo **next.config.js** es la configuración de webpack
 
 11. La carpeta **api** es lo que sería el servidor de Next. Ahí se pueden configurar cosas del backend supongo.
 
-## CONFIGURACIÓN FIRESTORE
+## Configuración Firestore
 
 1. Hacerse cuenta en Firebase
 
