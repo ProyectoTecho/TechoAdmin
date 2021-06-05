@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-   /*  body {
-        @apply bg-[#ffffff] text-white
-    } */
+    body {
+        @apply bg-[#449DEF] text-white
+    } 
     header {
         @apply  bg-[#449DEF] text-white
     }
     button {
-        @apply bg-[#F58454]
+        @apply bg-[#F58454] w-full
     }
 }
+
+/* START LOGIN */
+
+
+/* END LOGIN */
