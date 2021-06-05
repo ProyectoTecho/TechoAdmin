@@ -44,7 +44,7 @@ Si no me equivoco ese archivo **next.config.js** es la configuración de webpack
 
 3. Añade una aplicación WEB: ir a descripción (o información) general del proyecto, agregar un proyecto y agarrar el código
 
-var firebaseConfig = {
+`var firebaseConfig = {
     apiKey: "AIzaSyBOVExy0eI-xXbYVCO9-yG07j8S9WK7MKs", /* el api key es único */
     authDomain: "fb-crud-b1ec5.firebaseapp.com",
     projectId: "fb-crud-b1ec5",
@@ -53,7 +53,7 @@ var firebaseConfig = {
     appId: "1:827459989097:web:d32310d166743062c87cf8"  /* el id es único */
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);`
 
 y llevarlo a un archivo firebase.js en tu proyecto.
 
@@ -62,10 +62,10 @@ y llevarlo a un archivo firebase.js en tu proyecto.
 5. Exportar firestore: **export const db = fb.firestore();** ===> db va a ser la base de datos de firestore. Para usar la base de datos, importar **db** en donde se quiera usar, y usar los métodos de firestore que se detallan abajo (hay muchos más, pero son un ejemplo.)
 
 6. Para crear un nuevo "esquema"
-                    db /* base de datos firestore */
+                    `db /* base de datos firestore */
                     .collection('links') /* creas el esquema/collection "links" */
                     .doc() /* guardas un doc nuevo y se genera un id único */
-                    .set(Object) /* se le agrega a esa collection el Object (que viene desde algún estado) */
+                    .set(Object) /* se le agrega a esa collection el Object (que viene desde algún estado) */`
 
 7. Para editar un objeto específico de la colección: 
     db.collection('links').doc(Id).update(Object)
