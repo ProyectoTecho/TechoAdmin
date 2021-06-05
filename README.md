@@ -68,22 +68,24 @@ y llevarlo a un archivo firebase.js en tu proyecto.
                     .set(Object) /* se le agrega a esa collection el Object (que viene desde algún estado) */`
 
 7. Para editar un objeto específico de la colección: 
-    db.collection('links').doc(Id).update(Object)
+    `db.collection('links').doc(Id).update(Object)`
 
 8. Para hacer get de un objeto específico: 
-    db.collection('links').doc(id).get();
+    `db.collection('links').doc(id).get();`
 
 9. Para obtener todos los objetos:
-            db <!-- la firestore -->
+            `db <!-- la firestore -->
             .collection('links') <!-- la colección -->
             .onSnapshot((querySnapshot) => { 
                 const docs = []
                 querySnapshot.forEach((doc) => { <!-- los objetos que vienen en un arreglo -->
                     docs.push({ ...doc.data(), id: doc.id })
                 });
+             `   
 
 10. Para eliminar un objeto específico:
-        await   db <!-- se debe usar AWAIT o Promesas porque son operaciones asíncronas -->
+        `await   db <!-- se debe usar AWAIT o Promesas porque son operaciones asíncronas -->
                 .collection('links') <!-- colección -->
                 .doc(id)    <!-- obtengo objeto por ID -->
                 .delete()   <!-- borro el objeto que coincide con ese ID -->
+         `       
