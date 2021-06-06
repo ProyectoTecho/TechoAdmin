@@ -1,26 +1,46 @@
-import Head from 'next/head'
-import Login from '../components/Login'
-import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
-
-
+import React,  {useState, useEffect} from "react";
+import Head from "next/head";
+import Login from "../components/Login";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import { auth } from "../firebase/client";
+import "firebase/auth";
 export default function Home() {
+  const [user, setUser] = useState (null)
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user)=>{
+       if (user){
+           setUser (user.email)
+       }
+     })
+   }, [])
+
   return (
-    <div >
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+          rel="stylesheet"
+        />
         <title>TECHO - Admin</title>
       </Head>
-
       <Navbar />
-      <div className='relative min-h-screen flex '> 
+      {
+        !user ? (
+          <Login />
+        ):(
+      <div className="relative min-h-screen flex ">
         <Sidebar />
-        <Login />
       </div>
+
+        )
+
+      }
 
 
     </div>
-  )
+  );
 }

@@ -1,13 +1,15 @@
 import SignIn from "./SignIn";
 import LoginFooter from "./LoginFooter";
 import Logintext from "./Logintext";
+import Modal from "./Modal";
+
 
 function Login() {
   return (
     <div className="bg-[#449DEF]  h-screen content-center sm:text-center text-center ">
       <form className="max-w-2xl mx-auto space-y-6 focus-border-teal-500  align-middle">
         <Logintext />
-        <SignIn />
+        <Modal/>
       </form>
 
       {/* <LoginFooter /> */}
