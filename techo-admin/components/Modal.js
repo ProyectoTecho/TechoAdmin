@@ -50,7 +50,6 @@ function Modal() {
           <div className="rounded-md shadow-sm -space-y-px">
             <input
               type="email"
-              /* id="sigInEmail" */
               className="w-4/5 h-12 rounded-full text-black"
               placeholder="EMAIL"
               name="email"

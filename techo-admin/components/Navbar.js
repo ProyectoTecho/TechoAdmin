@@ -7,15 +7,15 @@ import "firebase/auth";
 const Navbar = () => {
 
     const [user, setUser] = useState (null)
-
     useEffect(() => {
-     auth.onAuthStateChanged((user)=>{
+      auth.onAuthStateChanged((user)=>{
         if (user){
-            setUser (user.email)
+          setUser (user.email)
         }
       })
     }, [])
-
+    
+  
     const handleLogout = () => {
     auth.signOut()
     setUser (null)
@@ -39,7 +39,7 @@ const Navbar = () => {
         />
 
         <h2 className="whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
-          Nombre del usuario
+          {user}
         </h2>
           
         <button
