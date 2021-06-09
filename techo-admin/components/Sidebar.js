@@ -1,9 +1,11 @@
 import React from 'react'
 import SidebarButtons from './SidebarButtons'
-
 import MontosForm from './MontosForm'
 
+
 const Sidebar = () => {
+
+
     return (
         <div className='flex '>           
             <div className='bg-[#449DEF] space-y-8 mr-5 ml-5 w-36 mt-5 '>
