@@ -1,9 +1,12 @@
 // import { onAuthStateChanged } from "../firebase/client";
 import { useState, useEffect } from "react";
 import { auth } from "../firebase/client";
+import { useRouter } from 'next/router'
+
 import "firebase/auth";
 
 function Modal() {
+  const router = useRouter()
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -29,6 +32,7 @@ function Modal() {
      .signInWithEmailAndPassword(email, password)
      .then((response) => {
       console.log(response);
+      router.push("/Sidebar")
      })
      .catch((error) => {
    

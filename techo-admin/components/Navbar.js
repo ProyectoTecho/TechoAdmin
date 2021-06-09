@@ -2,10 +2,11 @@ import React,  {useState, useEffect} from "react";
 import LogoTecho from "./LogoTecho";
 import { UserIcon } from "@heroicons/react/outline";
 import { auth } from "../firebase/client";
+import { useRouter } from 'next/router'
 import "firebase/auth";
 
 const Navbar = () => {
-
+    const router = useRouter()
     const [user, setUser] = useState (null)
     useEffect(() => {
       auth.onAuthStateChanged((user)=>{
@@ -19,6 +20,7 @@ const Navbar = () => {
     const handleLogout = () => {
     auth.signOut()
     setUser (null)
+    router.push('/Login')
     } 
 
   return (

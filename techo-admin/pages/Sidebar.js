@@ -1,9 +1,11 @@
 import React from 'react'
-import SidebarButtons from './SidebarButtons'
+import SidebarButtons from '../components/SidebarButtons'
+import Navbar from '../components/Navbar'
 
 const Sidebar = () => {
     return (
         <nav >
+            <Navbar/>
             <div className='bg-[#449DEF] space-y-8 mr-5 ml-5 h-screen w-36 mt-5  '>
                 <SidebarButtons title='Header' />
                 <SidebarButtons title='Numeros' />

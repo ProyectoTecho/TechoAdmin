@@ -1,18 +1,21 @@
-import SignIn from "./SignIn";
-import LoginFooter from "./LoginFooter";
-import Logintext from "./Logintext";
-import Modal from "./Modal";
-
+import SignIn from "../components/SignIn";
+import LoginFooter from "../components/LoginFooter";
+import Logintext from "../components/Logintext";
+import Modal from "../components/Modal";
+import Navbar from '../components/Navbar'
 
 function Login() {
   return (
-    <div className="bg-[#449DEF]  h-screen content-center sm:text-center text-center ">
-      <form className="max-w-2xl mx-auto space-y-6 focus-border-teal-500  align-middle">
-        <Logintext />
-        <Modal/>
-      </form>
+    <div>
+      <Navbar />
+      <div className="bg-[#449DEF]  h-screen content-center sm:text-center text-center ">
+        <form className="max-w-2xl mx-auto space-y-6 focus-border-teal-500  align-middle">
+          <Logintext />
+          <Modal />
+        </form>
 
-      {/* <LoginFooter /> */}
+        {/* <LoginFooter /> */}
+      </div>
     </div>
   );
 }
