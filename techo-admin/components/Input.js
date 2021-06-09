@@ -4,7 +4,7 @@ const Input = ({ label, type, value, onChange, placeholder }) => {
     return (
         <label >
             {label}
-            <input type={type} value={value} onChange={onChange} placeholder={placeholder} />
+            <input className='mr-5 ml-5' type={type} value={value} onChange={onChange} placeholder={placeholder} />
 
         </label>
     )

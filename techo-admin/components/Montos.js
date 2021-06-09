@@ -8,14 +8,18 @@ const Montos = () => {
         e.preventDefault()
         setValue(e.target.value)
     }
-    
+
     return (
-        <div className='flex flex-row'>
-            <h1>montos</h1>
-            <Input type={'number'} value={value} onChange={onChange} placeholder={'1er Monto'}/>
-            <Input type={'number'} value={value} onChange={onChange} placeholder={'2do Monto'}/>
-            <Input type={'number'} value={value} onChange={onChange} placeholder={'3er Monto'}/>
-            <Input type={'number'} value={value} onChange={onChange} placeholder={'4to Monto'}/>
+        
+        <div className='flex flex-col h-screen'>
+            <h1>Editar Montos</h1>
+            <Input type={'number'} value={value} onChange={onChange} placeholder={'Ingrese nuevo monto'} label={'1er Monto'}/>
+            <Input type={'number'} value={value} onChange={onChange} placeholder={'Ingrese nuevo monto'}
+            label={'2do Monto'}/>
+            <Input type={'number'} value={value} onChange={onChange} placeholder={'Ingrese nuevo monto'}
+            label={'3er Monto'}/>
+            <Input type={'number'} value={value} onChange={onChange} placeholder={'Ingrese nuevo monto'}
+            label={'4to Monto'}/>
         </div>
     )
 }
