@@ -1,6 +1,6 @@
 import React from 'react'
-import SidebarButtons from '../components/SidebarButtons'
-import Navbar from '../components/Navbar'
+import SidebarButtons from './SidebarButtons'
+import Navbar from './Navbar'
 
 const Sidebar = () => {
     return (

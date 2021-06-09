@@ -32,7 +32,7 @@ function Modal() {
      .signInWithEmailAndPassword(email, password)
      .then((response) => {
       console.log(response);
-      router.push("/Sidebar")
+      router.push("/Home")
      })
      .catch((error) => {
    
