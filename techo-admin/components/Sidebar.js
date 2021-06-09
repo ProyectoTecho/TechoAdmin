@@ -1,21 +1,25 @@
 import React from 'react'
 import SidebarButtons from './SidebarButtons'
-import Navbar from './Navbar'
+import MontosForm from './MontosForm'
+
 
 const Sidebar = () => {
+
+
     return (
-        <nav >
-            <Navbar/>
-            <div className='bg-[#449DEF] space-y-8 mr-5 ml-5 h-screen w-36 mt-5  '>
-                <SidebarButtons title='Header' />
+        <div className='flex '>           
+            <div className='bg-[#449DEF] space-y-8 mr-5 ml-5 w-36 mt-5 '>
+                <SidebarButtons title='Montos Form' />
+                <SidebarButtons title='Donacion única' />
                 <SidebarButtons title='Numeros' />
-                <SidebarButtons title='Captadoras'/>
-                <SidebarButtons title='Form'/>
-                <SidebarButtons title='Donacion única'/>
-                <SidebarButtons title='Argentina'/>
+                <SidebarButtons title='Captadoras' />
+                <SidebarButtons title='Argentina' />
             </div>
 
-        </nav>
+            <div className=''>
+                <MontosForm />
+            </div>
+        </div>
     )
 }
 

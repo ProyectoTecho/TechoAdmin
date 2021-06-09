@@ -2,9 +2,9 @@ import React from 'react'
 
 const Input = ({ label, type, value, onChange, placeholder }) => {
     return (
-        <label className={styles.label}>
+        <label >
             {label}
-            <input type={type} value={value} onChange={onChange} placeholder={placeholder} />
+            <input className='mt-2 text-black'type={type} value={value} onChange={onChange} placeholder={placeholder} />
 
         </label>
     )
