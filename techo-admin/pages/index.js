@@ -2,7 +2,8 @@ import React,  {useState, useEffect} from "react";
 import Head from "next/head";
 import Login from "./Login";
 import Navbar from "../components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "../components/Sidebar";
+
 import { auth } from "../firebase/client";
 import "firebase/auth";
 
