@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Input from './Input'
 import Button from './Button'
 
-const Montos = () => {
+const MontosForm = () => {
     const [data, setValue] = useState({
         firstInput: 0,
         secondInput: 0,
@@ -28,4 +28,4 @@ const Montos = () => {
     )
 }
 
-export default Montos
+export default MontosForm
