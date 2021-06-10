@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ label, type, value, onChange, placeholder }) => {
+const Input = ({ label, name, type, value, onChange, placeholder }) => {
   return (
     <label>
       {label}
@@ -8,6 +8,7 @@ const Input = ({ label, type, value, onChange, placeholder }) => {
         className="mt-2 text-black"
         type={type}
         value={value}
+        name={name} /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
         onChange={onChange}
         placeholder={placeholder}
       />
