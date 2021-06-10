@@ -1,7 +1,7 @@
 import React from 'react'
 import SidebarButtons from './SidebarButtons'
-import MontosForm from './MontosForm'
-
+/* import MontosForm from './MontosForm' */
+import DonacionUnica from './DonacionUnica'
 
 const Sidebar = () => {
 
@@ -17,7 +17,8 @@ const Sidebar = () => {
             </div>
 
             <div className=''>
-                <MontosForm />
+                {/* <MontosForm /> */}
+                <DonacionUnica />
             </div>
         </div>
     )
