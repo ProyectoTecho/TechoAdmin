@@ -1,6 +1,7 @@
 import React from 'react'
 import SidebarButtons from './SidebarButtons'
-/* import MontosForm from './MontosForm' */
+import MontosForm from './MontosForm'
+import Porcentajes from './porcentajes/Porcentajes'
 import DonacionUnica from './DonacionUnica'
 
 const Sidebar = () => {
@@ -14,10 +15,12 @@ const Sidebar = () => {
                 <SidebarButtons title='Numeros' />
                 <SidebarButtons title='Captadoras' />
                 <SidebarButtons title='Argentina' />
+                <SidebarButtons title='Porcentajes' />
             </div>
 
             <div className=''>
-                {/* <MontosForm /> */}
+                <MontosForm />
+                <Porcentajes />       
                 <DonacionUnica />
             </div>
         </div>

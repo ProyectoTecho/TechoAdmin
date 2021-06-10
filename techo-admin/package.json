@@ -10,7 +10,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.1",
     "@tailwindcss/forms": "^0.3.2",
-    "firebase": "^8.6.3",
+    "firebase": "^8.6.2",
     "firebaseui": "^4.8.0",
     "next": "latest",
     "react": "^17.0.1",
