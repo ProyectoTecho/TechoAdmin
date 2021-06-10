@@ -1,6 +1,6 @@
-import Logintext from "../components/Logintext";
-import SignIn from "../components/SignIn";
-// import LoginFooter from "../components/LoginFooter";
+import Logintext from "../components/login/Logintext";
+import SignIn from "../components/login/SignIn";
+// import LoginFooter from "../components/login/LoginFooter";
 
 function Login() {
   return (
