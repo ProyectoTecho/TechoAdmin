@@ -1,23 +1,21 @@
-import React,  {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Login from "./Login";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Home from "./Home";
 
 import { auth } from "../firebase/client";
 import "firebase/auth";
 
-
-export default function Home() {
-  const [user, setUser] = useState (null)
+export default function index() {
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    auth.onAuthStateChanged((user)=>{
-       if (user){
-           setUser (user.email)
-       }
-     })
-   }, [])
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user.email);
+      }
+    });
+  }, []);
 
   return (
     <div>
@@ -30,20 +28,14 @@ export default function Home() {
         />
         <title>TECHO - Admin</title>
       </Head>
-      <Navbar />
-      {
-        !user ? (
-          <Login />
-        ):(
-      <div className="relative min-h-screen flex ">
-        <Sidebar />
-      </div>
 
-        )
-
-      }
-
-
+      {!user ? (
+        <Login />
+      ) : (
+        <div className="relative min-h-screen flex ">
+          <Home />
+        </div>
+      )}
     </div>
   );
 }

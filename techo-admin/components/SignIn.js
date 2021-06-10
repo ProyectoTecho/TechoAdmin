@@ -21,9 +21,8 @@ function SignIn() {
         >
         Sign In
       </button>
-    <Modal /> 
-
-
+      { modal === true && <Modal/> }
+    
     </div>
   );
 }
