@@ -4,6 +4,7 @@ import Button from '../Button'
 import { db } from '../../firebase/client'
 
 const MontosForm = () => {
+
     const [firstInput, setFirstInput] = useState("")
     const [secondInput, setSecondInput] = useState("")
     const [thirdInput, setThirdInput] = useState("")
@@ -61,12 +62,36 @@ const MontosForm = () => {
 
         <div className='align-center w-36 m-5 space-y-6'>
             <h1 className='font-bold'>Editar Montos</h1>
-            <Input name='firstInput' type={'number'} value={firstInput} onChange={(e) => setFirstInput(e.target.value)} placeholder={'Ingrese nuevo monto'} label={'1er Monto'} />
-            <Input name='secondInput' type={'number'} value={secondInput} onChange={(e) => setSecondInput(e.target.value)} placeholder={'Ingrese nuevo monto'}
-                label={'2do Monto'} />
-            <Input name='thirdInput' type={'number'} value={thirdInput} onChange={(e) => setThirdInput(e.target.value)} placeholder={'Ingrese nuevo monto'}
-                label={'3er Monto'} />
-            <Button onClick={editOrCreateMonto} content='Guardar cambios' styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} />
+            <Input 
+            name='firstInput' 
+            type={'number'} 
+            value={firstInput} 
+            onChange={(e) => setFirstInput(e.target.value)} 
+            placeholder={'Ingrese nuevo monto'} 
+            label={'1er Monto'} 
+
+            />
+            <Input 
+            name='secondInput' 
+            type={'number'} 
+            value={secondInput} 
+            onChange={(e) => setSecondInput(e.target.value)} 
+            placeholder={'Ingrese nuevo monto'}
+            label={'2do Monto'} />
+            <Input name='thirdInput' 
+            type={'number'} 
+            value={thirdInput} 
+            onChange={(e) => setThirdInput(e.target.value)} 
+            placeholder={'Ingrese nuevo monto'}
+                label={'3er Monto'} 
+
+                />
+            <Button onClick={editOrCreateMonto} 
+            content='Guardar cambios' 
+            styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"
+            } 
+                
+            />
         </div>
     )
 }
