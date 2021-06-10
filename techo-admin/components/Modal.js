@@ -1,12 +1,11 @@
-// import { onAuthStateChanged } from "../firebase/client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { auth } from "../firebase/client";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 import "firebase/auth";
 
 function Modal() {
-  const router = useRouter()
+  const router = useRouter();
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -20,30 +19,26 @@ function Modal() {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  // useEffect(() => {
-  //   onAuthStateChanged(setUser);
-  // }, []);
   const email = user.email;
   const password = user.password;
-  
+
   const handleClick = (e) => {
     e.preventDefault();
     return auth
-     .signInWithEmailAndPassword(email, password)
-     .then((response) => {
-      console.log(response);
-      router.push("/Home")
-     })
-     .catch((error) => {
-   
-      if (error.code === "auth/user-not-found") {
-        alert ("Usuario incorrecto")
-      };
-      if (error.code === "auth/wrong-password") {
-        alert ("Password incorrecto")
-      };
-     });
-   };
+      .signInWithEmailAndPassword(email, password)
+      .then((response) => {
+        console.log(response);
+        router.push("/Home");
+      })
+      .catch((error) => {
+        if (error.code === "auth/user-not-found") {
+          alert("Usuario incorrecto");
+        }
+        if (error.code === "auth/wrong-password") {
+          alert("Password incorrecto");
+        }
+      });
+  };
 
   return (
     <div className="rounded-md min-h-full flex items-center justify-center  bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 z-50 mt-0">
@@ -65,7 +60,7 @@ function Modal() {
           <div className="rounded-md shadow-sm -space-y-px">
             <input
               type="password"
-              id="sigInPassword"  
+              id="sigInPassword"
               className="w-4/5 h-12 rounded-full text-black"
               placeholder="PASSWORD"
               name="password"
