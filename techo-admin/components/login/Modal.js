@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { auth } from "../firebase/client";
+import { auth } from "../../firebase/client";
 import { useRouter } from "next/router";
 
 import "firebase/auth";

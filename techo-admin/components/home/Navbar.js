@@ -1,7 +1,7 @@
 import React,  {useState, useEffect} from "react";
-import LogoTecho from "./LogoTecho";
+import LogoTecho from "../LogoTecho";
 import { UserIcon } from "@heroicons/react/outline";
-import { auth } from "../firebase/client";
+import { auth } from "../../firebase/client";
 import { useRouter } from 'next/router'
 import "firebase/auth";
 

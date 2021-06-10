@@ -19,7 +19,7 @@ if (!firebase.apps.length) {
 const app = firebase.app();
 const auth = firebase.auth();
 
-export { auth};
+export { auth };
 
 /* Exportas la base de datos de firestore */
 export const db = firebase.firestore();
