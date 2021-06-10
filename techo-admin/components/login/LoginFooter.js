@@ -1,4 +1,4 @@
-import LogoTecho from "./LogoTecho";
+import LogoTecho from "../LogoTecho";
 
 
 function LoginFooter() {
