@@ -1,8 +1,9 @@
 import React from 'react'
 import SidebarButtons from './SidebarButtons'
 import MontosForm from './MontosForm'
-import Porcentajes from './porcentajes/Porcentajes'
+import Porcentajes from '../home/porcentajes/Porcentajes'
 import DonacionUnica from './DonacionUnica'
+import Captadoras from './Captadoras'
 
 const Sidebar = () => {
 
@@ -22,6 +23,7 @@ const Sidebar = () => {
                 <MontosForm />
                 <Porcentajes />       
                 <DonacionUnica />
+                <Captadoras/>
             </div>
         </div>
     )
