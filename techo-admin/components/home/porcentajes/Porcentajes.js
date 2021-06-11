@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Input from './Input'
-import Button from '../Button'
-import { db } from '../../firebase/client'
+import Input from '../Input'
+import Button from '../../Button'
+import { db } from '../../../firebase/client'
 
 const Porcentajes = () => {
 	
