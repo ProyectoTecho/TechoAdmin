@@ -7,7 +7,7 @@ function SignIn() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    setModal(true)
+    setModal(!modal)
     console.log('hiciste click'); 
   }
 
@@ -21,7 +21,7 @@ function SignIn() {
         >
         Sign In
       </button>
-      { modal === true && <Modal/> }
+      { modal && <Modal/> }
     
     </div>
   );

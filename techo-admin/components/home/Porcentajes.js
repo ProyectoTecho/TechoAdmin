@@ -3,7 +3,7 @@ import Input from './Input'
 import Button from '../Button'
 import { db } from '../../firebase/client'
 
-function Porcentajes() {
+const Porcentajes = () => {
 	
 	const [firstInput, setFirstInput] = useState("")
 	const [secondInput, setSecondInput] = useState("")
@@ -30,7 +30,7 @@ function Porcentajes() {
 			firstPercent: firstInput,
 			secondPercent: secondInput,
 			thirdPercent: thirdInput,
-			fourthPercent: fourthInput
+			fourthPercent: fourthInput,
 		    })
 		}
 		else {
