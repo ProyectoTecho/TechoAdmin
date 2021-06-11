@@ -92,7 +92,7 @@ const MontosForm = () => {
     return (
 
         <div className='align-center w-36 m-5 space-y-6'>
-            <h1 className='font-bold'>Editar Montos</h1>
+            <h1 className='font-bold'>Editar botones de Mercado Pago</h1>
 
             <Input type={'number'} name='firstButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'} label={'1er botón'} />
             <Input type={'text'} name='firstLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'} label={''} />

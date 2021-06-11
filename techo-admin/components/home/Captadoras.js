@@ -13,7 +13,6 @@ function Captadoras() {
         thirdLink: "",
         fourthName: "",
         fourthLink: "",
-       
     })
 
     const [captadoras, setCaptadoras] = useState('')
