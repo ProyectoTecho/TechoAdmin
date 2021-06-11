@@ -5,13 +5,13 @@ import { db } from '../../firebase/client'
 
 function Captadoras() {
     const [data, setData] = useState({
-        firstButton: "",
+        firstName: "",
         firstLink: "",
-        secondButton: "",
+        secondName: "",
         secondLink: "",
-        thirdButton: "",
+        thirdName: "",
         thirdLink: "",
-        fourthButton: "",
+        fourthName: "",
         fourthLink: "",
        
     })
@@ -46,13 +46,13 @@ function Captadoras() {
                     .collection('captadoras')
                     .doc()
                     .set({
-                        firstButton: data.firstButton,
+                        firstName: data.firstName,
                         firstLink: data.firstLink,
-                        secondButton: data.secondButton,
+                        secondName: data.secondName,
                         secondLink: data.secondLink,
-                        thirdButton: data.thirdButton,
+                        thirdName: data.thirdName,
                         thirdLink: data.thirdLink,
-                        fourthButton: data.fourthButton,
+                        fourthName: data.fourthName,
                         fourthLink: data.fourthLink,
                         
                     })
@@ -62,13 +62,13 @@ function Captadoras() {
                     .collection('captadoras')
                     .doc(captadoras[0].id)
                     .update({
-                        firstButton: data.firstButton,
+                        firstName: data.firstName,
                         firstLink: data.firstLink,
-                        secondButton: data.secondButton,
+                        secondName: data.secondName,
                         secondLink: data.secondLink,
-                        thirdButton: data.thirdButton,
+                        thirdName: data.thirdName,
                         thirdLink: data.thirdLink,
-                        fourthButton: data.fourthButton,
+                        fourthName: data.fourthName,
                         fourthLink: data.fourthLink,
                         
                     })
@@ -91,22 +91,22 @@ function Captadoras() {
                 <br />
                 <br />
 
-            <Input type={'text'} name='firstButton' onChange={handleChange} placeholder={'Nombre y Apellido'} label={'Captadora 1'} />
+            <Input type={'text'} name='firstName' onChange={handleChange} placeholder={'Nombre y Apellido'} label={'Captadora 1'} />
             <Input type={'text'} name='firstLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'} label={''} />
 
 
-            <Input type={'text'} name='secondButton' onChange={handleChange} placeholder={'Nombre y Apellidoo'}
+            <Input type={'text'} name='secondName' onChange={handleChange} placeholder={'Nombre y Apellidoo'}
                 label={'Captadora 2'} />
             <Input type={'text'} name='secondLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
                 label={''} />
 
 
-            <Input type={'text'} name='thirdButton' onChange={handleChange} placeholder={'Nombre y Apellido'}
+            <Input type={'text'} name='thirdName' onChange={handleChange} placeholder={'Nombre y Apellido'}
                 label={'Captadora 3'} />
             <Input type={'text'} name='thirdLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
                 label={''} />
 
-            <Input type={'text'} name='fourthButton' onChange={handleChange} placeholder={'Nombre y Apellido'}
+            <Input type={'text'} name='fourthName' onChange={handleChange} placeholder={'Nombre y Apellido'}
                 label={'Captadora 4'} />
             <Input type={'text'} name='fourthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
                 label={''} />
