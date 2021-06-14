@@ -56,6 +56,7 @@ const MontosForm = () => {
                 });
                 setMontos(docs)
             })
+            setFirstInput ("")
     }
 
     return (
