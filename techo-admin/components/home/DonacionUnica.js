@@ -91,40 +91,48 @@ const MontosForm = () => {
     console.log(data)
     return (
 
-        <div className='align-center w-36 m-5 space-y-6'>
+        <div className='align-center m-5 space-y-6'>
             <h1 className='font-bold'>Editar botones de Mercado Pago</h1>
 
-            <Input type={'number'} name='firstButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'} label={'1er botón'} />
-            <Input type={'text'} name='firstLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'} label={''} />
+            <div className='flex'>
+                <Input type={'number'} name='firstButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'} label={'1er botón'} />
+                <Input type={'text'} name='firstLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'} label={''} />
+            </div>
 
+            <div className='flex'>
+                <Input type={'number'} name='secondButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
+                    label={'2do botón'} />
+                <Input type={'text'} name='secondLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
+                    label={''} />
+            </div>
 
-            <Input type={'number'} name='secondButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
-                label={'2do botón'} />
-            <Input type={'text'} name='secondLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
-                label={''} />
+            <div className='flex'>
+                <Input type={'number'} name='thirdButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
+                    label={'3er botón'} />
+                <Input type={'text'} name='thirdLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
+                    label={''} />
+            </div>
 
+            <div className='flex'>
+                <Input type={'number'} name='fourthButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
+                    label={'4to botón'} />
+                <Input type={'text'} name='fourthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
+                    label={''} />
+            </div>
 
-            <Input type={'number'} name='thirdButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
-                label={'3er botón'} />
-            <Input type={'text'} name='thirdLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
-                label={''} />
+            <div className='flex'>
+                <Input type={'number'} name='fifthButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
+                    label={'5to botón'} />
+                <Input type={'text'} name='fifthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
+                    label={''} />
+            </div>
 
-            <Input type={'number'} name='fourthButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
-                label={'4to botón'} />
-            <Input type={'text'} name='fourthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
-                label={''} />
-
-
-            <Input type={'number'} name='fifthButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
-                label={'5to botón'} />
-            <Input type={'text'} name='fifthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
-                label={''} />
-
-
-            <Input type={'number'} name='sixthButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
-                label={'6to botón'} />
-            <Input type={'text'} name='sixthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
-                label={''} />
+            <div className='flex'>
+                <Input type={'number'} name='sixthButton' onChange={handleChange} placeholder={'Ingrese nuevo monto'}
+                    label={'6to botón'} />
+                <Input type={'text'} name='sixthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de Mercado Pago'}
+                    label={''} />
+            </div>
 
             <Button onClick={editOrCreateDonacion} content='Guardar cambios' styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} />
         </div>

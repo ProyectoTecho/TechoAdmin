@@ -3,7 +3,7 @@ import SidebarButtons from './SidebarButtons'
 import MontosForm from './MontosForm'
 import { useRouter } from "next/router";
 
-const Sidebar = () => {
+const Sidebar = ({children}) => {
     const router = useRouter()
     return (
         <div className='flex '>           
@@ -24,7 +24,7 @@ const Sidebar = () => {
             </div>
 
             <div className=''>
-                <MontosForm />
+                {children}
             </div>
         </div>
     )

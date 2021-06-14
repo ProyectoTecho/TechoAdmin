@@ -53,7 +53,7 @@ function Captadoras() {
                         thirdLink: data.thirdLink,
                         fourthName: data.fourthName,
                         fourthLink: data.fourthLink,
-                        
+
                     })
             }
             else {
@@ -69,7 +69,7 @@ function Captadoras() {
                         thirdLink: data.thirdLink,
                         fourthName: data.fourthName,
                         fourthLink: data.fourthLink,
-                        
+
                     })
             }
         }
@@ -81,34 +81,41 @@ function Captadoras() {
     console.log(data)
     return (
 
-        <div className='align-center w-36 m-5 space-y-6'>
+        <div className='align-center m-5 space-y-6'>
             <h1 className='font-bold'>Editar Captadoras</h1>
             <p>Las fotos de las captadoras deben tener un tamaño menor a los 100 kb y deber ser en formato .png </p>
-            <p>Para modificar el tamaño de las imagenes pueden usar la siguiente pagina: <br /> 
-                <a href="https://www.achicarimagenes.com.ar/" target= "blanck" >Achicar tamaño de imagenes</a>
+            <p >Para modificar el tamaño de las imagenes pueden usar la siguiente pagina: <br />
+                <a  href="https://www.achicarimagenes.com.ar/" target="blanck" >                
+                    <p className='font-bold cursor-pointer' >Achicar tamaño de imagenes</p>
+                </a>
             </p>
-                <br />
-                <br />
 
-            <Input type={'text'} name='firstName' onChange={handleChange} placeholder={'Nombre y Apellido'} label={'Captadora 1'} />
-            <Input type={'text'} name='firstLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'} label={''} />
+            <div className='flex'>
+                <Input type={'text'} name='firstName' onChange={handleChange} placeholder={'Nombre y Apellido'} label={'Captadora 1'} />
+                <Input type={'text'} name='firstLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'} label={''} />
+            </div>
 
+            <div className='flex'>
+                <Input type={'text'} name='secondName' onChange={handleChange} placeholder={'Nombre y Apellidoo'}
+                    label={'Captadora 2'} />
+                <Input type={'text'} name='secondLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
+                    label={''} />
+            </div>
 
-            <Input type={'text'} name='secondName' onChange={handleChange} placeholder={'Nombre y Apellidoo'}
-                label={'Captadora 2'} />
-            <Input type={'text'} name='secondLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
-                label={''} />
+            <div className='flex'>
+                <Input type={'text'} name='thirdName' onChange={handleChange} placeholder={'Nombre y Apellido'}
+                    label={'Captadora 3'} />
+                <Input type={'text'} name='thirdLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
+                    label={''} />
+            </div>
 
+            <div className='flex'>
+                <Input type={'text'} name='fourthName' onChange={handleChange} placeholder={'Nombre y Apellido'}
+                    label={'Captadora 4'} />
+                <Input type={'text'} name='fourthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
+                    label={''} />
 
-            <Input type={'text'} name='thirdName' onChange={handleChange} placeholder={'Nombre y Apellido'}
-                label={'Captadora 3'} />
-            <Input type={'text'} name='thirdLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
-                label={''} />
-
-            <Input type={'text'} name='fourthName' onChange={handleChange} placeholder={'Nombre y Apellido'}
-                label={'Captadora 4'} />
-            <Input type={'text'} name='fourthLink' onChange={handleChange} placeholder={'Ingrese nuevo link de google drive'}
-                label={''} />
+            </div>
 
             <Button onClick={editOrCreateCaptadoras} content='Guardar cambios' styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} />
         </div>
