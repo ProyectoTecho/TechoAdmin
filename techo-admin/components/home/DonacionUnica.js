@@ -137,7 +137,7 @@ const MontosForm = () => {
             <Button 
             onClick={editOrCreateDonacion} 
             content='Guardar cambios' 
-            styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} 
+            styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"} 
             disabled={
                 data.firstButton === "" ||
                 data.firstLink  === "" ||
