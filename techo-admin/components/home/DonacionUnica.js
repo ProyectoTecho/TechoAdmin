@@ -134,9 +134,32 @@ const MontosForm = () => {
                     label={''} />
             </div>
 
-            <Button onClick={editOrCreateDonacion} content='Guardar cambios' styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} />
+            <Button 
+            onClick={editOrCreateDonacion} 
+            content='Guardar cambios' 
+            styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} 
+            disabled={
+                data.firstButton === "" ||
+                data.firstLink  === "" ||
+                data.secondButton === "" ||
+                data.secondLink === "" ||
+                data.thirdButton  === "" ||
+                data.thirdLink  === "" ||
+                data.fourthButton === "" ||
+                data.fourthLink === "" ||
+                data.fifthButton === "" ||
+                data.fifthLink === "" ||
+                data.sixthButton === "" ||
+                data.sixthLink === "" 
+                    ? true
+                    : 
+                    false
+            }
+            
+            />
         </div>
     )
 }
 
 export default MontosForm
+

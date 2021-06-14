@@ -85,7 +85,7 @@ function Captadoras() {
             <h1 className='font-bold'>Editar Captadoras</h1>
             <p>Las fotos de las captadoras deben tener un tamaño menor a los 100 kb y deber ser en formato .png </p>
             <p >Para modificar el tamaño de las imagenes pueden usar la siguiente pagina: <br />
-                <a  href="https://www.achicarimagenes.com.ar/" target="blanck" >                
+                <a href="https://www.achicarimagenes.com.ar/" target="blanck" >
                     <p className='font-bold cursor-pointer' >Achicar tamaño de imagenes</p>
                 </a>
             </p>
@@ -117,7 +117,24 @@ function Captadoras() {
 
             </div>
 
-            <Button onClick={editOrCreateCaptadoras} content='Guardar cambios' styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"} />
+            <Button
+                onClick={editOrCreateCaptadoras}
+                content='Guardar cambios'
+                styles={"ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"}
+                disabled={
+                    data.firstName === "" ||
+                    data.firstLink  === "" ||
+                    data.secondName === "" ||
+                    data.secondLink === "" ||
+                    data.thirdName  === "" ||
+                    data.thirdLink  === "" ||
+                    data.fourthName === "" ||
+                    data.fourthLink === "" 
+                        ? true
+                        : 
+                        false
+                }
+            />
         </div>
     )
 }
