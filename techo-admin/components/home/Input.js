@@ -5,7 +5,7 @@ const Input = ({ label, name, type, value, onChange, placeholder }) => {
     <label>
       {label}
       <input
-        className="mt-2 text-black"
+        className="mt-2 m-5 text-black"
         type={type}
         value={value}
         name={name} /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
