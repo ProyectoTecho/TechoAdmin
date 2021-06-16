@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# TechoNext
+hola
+=======
 # Página de Administrador de TECHO
 
 ## Cómo usar Next.js y Tailwind
@@ -89,3 +93,4 @@ y llevarlo a un archivo firebase.js en tu proyecto.
                 .doc(id)    <!-- obtengo objeto por ID -->
                 .delete()   <!-- borro el objeto que coincide con ese ID -->
          `       
+>>>>>>> 8f7926ea4da91faadf6869f8c69d5f7e49be4c85
