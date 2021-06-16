@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../components/home/Sidebar";
 import Navbar from "../components/home/Navbar";
-import DatosBancarios from "../components/home/DatosBancarios";
+import DatosBancarios from "../components/home/datosBancarios/DatosBancarios";
 
 function DatosBancariosPage() {
   return (
