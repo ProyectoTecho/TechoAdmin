@@ -1,17 +1,17 @@
 import React from "react";
 import Sidebar from "../components/home/Sidebar";
-import MontosForm from "../components/home/MontosForm";
 import Navbar from "../components/home/Navbar";
+import DatosBancarios from "../components/home/datosBancarios/DatosBancarios";
 
-const MontosPage = () => {
+function DatosBancariosPage() {
   return (
     <div>
       <Navbar />
       <Sidebar>
-        <MontosForm />
+        <DatosBancarios />
       </Sidebar>
     </div>
   );
-};
+}
 
-export default MontosPage;
+export default DatosBancariosPage;
