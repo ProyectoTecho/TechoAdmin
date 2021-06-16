@@ -33,14 +33,17 @@ function RecuperarPass() {
   };
 
   return (
-    
     <div className="flex justify-center mt-20">
       <div className="max-w-md w-full space-y-8 ">
-        <h1 className="text-3xl font-medium text-white flex justify-center">Techo Admin</h1>
-        <p className="text-white flex justify-center">Se le estara enviando un mail para reestablecer su contraseña</p>
+        <h1 className="text-3xl font-medium text-white flex justify-center">
+          Techo Admin
+        </h1>
+        <p className="text-white flex justify-center">
+          Se le estara enviando un mail para reestablecer su contraseña
+        </p>
 
-        <form className="mt-8 space-y-6" id="signInForm" method="POST">
-          <div className="rounded-md shadow-sm -space-y-px">
+        <form className="mt-8 space-y-6 " id="signInForm" method="POST">
+          <div className="rounded-md shadow-sm -space-y-px flex justify-center">
             <input
               type="email"
               className="w-4/5 h-12 rounded-full text-black "
@@ -51,7 +54,7 @@ function RecuperarPass() {
             />
           </div>
 
-          <div className="">
+          <div className="flex justify-center">
             <button
               className="group w-1/2  justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2"
               onClick={handleClick}
