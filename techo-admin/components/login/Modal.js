@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { auth } from "../../firebase/client";
 import { useRouter } from "next/router";
+import Link from "next/link" 
 
 import "firebase/auth";
 
@@ -77,6 +78,11 @@ function Modal() {
             >
               Login
             </button>
+            <br/>
+            <br />
+            <Link href="/RecuperarPass">
+            <a className="text-black" href="">Olvide la contraseña</a>
+            </Link>
           </div>
         </form>
       </div>
