@@ -17,7 +17,7 @@ const Sidebar = ({children}) => {
 
                 <SidebarButtons title='Captadoras' onClick={() => router.push("/CaptadorasPage") }/>
 
-                <SidebarButtons title='DatosBancarios' onClick={() => router.push("/DatosBancarios") }/>
+                <SidebarButtons title='DatosBancarios' onClick={() => router.push("/DatosBancariosPage") }/>
 
                 <SidebarButtons title='Porcentajes' onClick={() => router.push("/PorcentajesPage") }/>
 
