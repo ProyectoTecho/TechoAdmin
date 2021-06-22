@@ -38,6 +38,11 @@ function Intermediary() {
     } catch (error) {
       console.error(error);
     }
+    setNameBankInterm("")
+    setAddressBankInterm("")
+    setSwiftCodeInterm("")
+    setAccountNumberInterm("")
+    setLastSwift("")
   };
 
   const getIntermediary = async () => {

@@ -44,6 +44,9 @@ const MontosForm = () => {
         catch(error) {
             console.error(error)
         }
+        setFirstInput ("")
+        setSecondInput("")
+        setThirdInput("")
     }
 
     const getMontos = async () => {

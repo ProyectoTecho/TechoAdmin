@@ -76,6 +76,14 @@ function Captadoras() {
         catch (error) {
             console.error(error)
         }
+        setData({firstName: "",
+        firstLink: "",
+        secondName: "",
+        secondLink: "",
+        thirdName: "",
+        thirdLink: "",
+        fourthName: "",
+        fourthLink: "",})
     }
 
     console.log(data)
