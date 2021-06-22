@@ -86,6 +86,18 @@ const MontosForm = () => {
         catch (error) {
             console.error(error)
         }
+        setData({firstButton: "",
+        firstLink: "",
+        secondButton: "",
+        secondLink: "",
+        thirdButton: "",
+        thirdLink: "",
+        fourthButton: "",
+        fourthLink: "",
+        fifthButton: "",
+        fifthLink: "",
+        sixthButton: "",
+        sixthLink: "",})
     }
 
     console.log(data)

@@ -46,6 +46,14 @@ function Transferencia() {
     } catch (error) {
       console.error(error);
     }
+
+    setNameBankTransfer("")
+    setTypeAccountTransfer("")
+    setNumberAccountTransfer("")
+    setCbuNumberTransfer("")
+    setAliasAccountTransfer("")
+    setTitularAccountTransfer("")
+    setCuitTitularTransfer("")
   };
 
   const getTransfer = async () => {

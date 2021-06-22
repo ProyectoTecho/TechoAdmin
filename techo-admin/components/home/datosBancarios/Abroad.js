@@ -35,6 +35,10 @@ function Abroad() {
     } catch (error) {
       console.error(error);
     }
+    setNameBankAbroad("")
+    setSwiftCodeAbroad("")
+    setBeneficiaryNameAbroad("")
+    setBeneficiaryAccountAbroad("")
   };
 
   const getAbroad = async () => {

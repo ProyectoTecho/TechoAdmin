@@ -38,6 +38,10 @@ const Porcentajes = () => {
     } catch (error) {
       console.error(error);
     }
+    setFirstInput ("")
+    setSecondInput("")
+    setThirdInput("")
+    setFourthInput("")
   };
 
   const getPercent = async () => {
