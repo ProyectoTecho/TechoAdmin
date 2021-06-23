@@ -4,7 +4,7 @@ import LogoTecho from "../LogoTecho";
 function LoginFooter() {
   return (
     <div className='relative '>
-      <footer className='absolute inset-x-0 bottom-0'>
+      <footer className='mt-16'>
         <LogoTecho />
       </footer>
     </div>
