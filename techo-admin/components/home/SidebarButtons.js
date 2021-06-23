@@ -5,7 +5,7 @@ const SidebarButtons = ({ title, onClick }) => {
   return (
     <>
       <button
-        onClick={onClick} className="hover:bg-red-700 mr-4 whitespace-nowrap text-white font-bold py-2 px-4 p-5"
+        onClick={onClick} className="hover:bg-red-700 w-full m-2 whitespace-nowrap text-white font-bold py-2 rounded"
       >
         <p>{title}</p>
       </button>
