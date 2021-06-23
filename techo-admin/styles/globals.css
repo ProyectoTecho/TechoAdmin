@@ -10,7 +10,7 @@
         @apply  bg-[#449DEF] text-white
     }
     button {
-        @apply bg-[#F58454] w-full
+        @apply bg-[#F58454] 
     }
 }
 
