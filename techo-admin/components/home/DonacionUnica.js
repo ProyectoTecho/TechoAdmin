@@ -96,6 +96,8 @@ const MontosForm = () => {
     <div className="align-center text-center m-5 space-y-6">
       <h1 className="font-bold underline">EDITAR BOTONES DE MERCADO PAGO</h1>
 
+
+
       <div className="flex text-black text-sm">
       <div>
       <h3>1er BOTON</h3>
