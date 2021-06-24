@@ -94,20 +94,18 @@ const MontosForm = () => {
         </div>
       </div>
 
-      <div className="flex ">
-        <Button
-          onClick={editOrCreateMonto}
-          content="Guardar cambios"
-          styles={
-            "ml-5 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
-          }
-          disabled={
-            firstInput === "" || secondInput === "" || thirdInput === ""
-              ? true
-              : false
-          }
-        />
-      </div>
+      <Button
+        onClick={editOrCreateMonto}
+        content="Guardar cambios"
+        styles={
+          "rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
+        }
+        disabled={
+          firstInput === "" || secondInput === "" || thirdInput === ""
+            ? true
+            : false
+        }
+      />
     </div>
   );
 };
