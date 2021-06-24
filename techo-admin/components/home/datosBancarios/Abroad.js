@@ -52,7 +52,7 @@ function Abroad() {
   };
 
   return (
-    <div>
+    <div className="align-center text-center m-5 space-y-6 border-white border-2">
       <h2 className="border-black">Bank transfer from abroad</h2>
       <h3>Beneficiary Bank</h3>
 

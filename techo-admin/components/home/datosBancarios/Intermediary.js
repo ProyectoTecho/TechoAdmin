@@ -57,7 +57,7 @@ function Intermediary() {
 
 
   return (
-    <div>
+    <div className="align-center text-center m-5 space-y-6 border-white border-2">
       <h2 className="border-black">Intermediary Bank</h2>
 
       <div className="flex text-center text-black text-sm">
