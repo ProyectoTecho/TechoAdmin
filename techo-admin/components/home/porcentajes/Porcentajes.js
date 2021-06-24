@@ -109,12 +109,12 @@ const Porcentajes = () => {
         </div>
       </div>
 
-      <div className="flex">
+      
         <Button
           onClick={editOrCreatePercent}
           content="Guardar cambios"
           styles={
-            "ml-5 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
+            "rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
           }
           disabled={
             firstInput === "" ||
@@ -125,7 +125,7 @@ const Porcentajes = () => {
               : false
           }
         />
-      </div>
+      
     </div>
   );
 };
