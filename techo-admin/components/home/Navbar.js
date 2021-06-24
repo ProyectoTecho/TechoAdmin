@@ -45,7 +45,7 @@ const Navbar = () => {
         </h2>
           
         <button
-          onClick= {handleLogout} className="ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"
+          onClick= {handleLogout} className="ml-3 w-36 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5"
         >
           Log Out
         </button>

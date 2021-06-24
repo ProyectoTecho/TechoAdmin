@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "./Input";
 import Button from "../Button";
 import { db } from "../../firebase/client";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MontosForm = () => {
   const [data, setData] = useState({
@@ -90,121 +92,129 @@ const MontosForm = () => {
       sixthButton: "",
       sixthLink: "",
     });
+    toast("CAMBIOS REALIZADOS!! 🎉🎉", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   return (
     <div className="align-center text-center m-5 space-y-6">
+      <ToastContainer></ToastContainer>
+
       <h1 className="font-bold underline">EDITAR BOTONES DE MERCADO PAGO</h1>
 
-
-
       <div className="flex text-black text-sm">
-      <div>
-      <h3>1er BOTON</h3>
-        <Input
-          type={"number"}
-          name="firstButton"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo monto"}
-        />
-        <Input
-          type={"text"}
-          name="firstLink"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo link de MP"}
-        />
-      </div>
+        <div>
+          <h3>1er BOTON</h3>
+          <Input
+            type={"number"}
+            name="firstButton"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo monto"}
+          />
+          <Input
+            type={"text"}
+            name="firstLink"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo link de MP"}
+          />
+        </div>
       </div>
 
       <div className="flex text-black text-sm">
-      <div>
-      <h3>2do BOTON</h3>
-        <Input
-          type={"number"}
-          name="secondButton"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo monto"}
-        />
-        <Input
-          type={"text"}
-          name="secondLink"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo link de MP"}
-        />
-      </div>
-      </div>
-
-      <div className="flex text-black text-sm">
-      <div>
-      <h3>3er BOTON</h3>
-        <Input
-          type={"number"}
-          name="thirdButton"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo monto"}
-        />
-        <Input
-          type={"text"}
-          name="thirdLink"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo link de MP"}
-        />
-      </div>
+        <div>
+          <h3>2do BOTON</h3>
+          <Input
+            type={"number"}
+            name="secondButton"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo monto"}
+          />
+          <Input
+            type={"text"}
+            name="secondLink"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo link de MP"}
+          />
+        </div>
       </div>
 
       <div className="flex text-black text-sm">
-      <div>
-      <h3>4to BOTON</h3>
-        <Input
-          type={"number"}
-          name="fourthButton"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo monto"}
-        />
-        <Input
-          type={"text"}
-          name="fourthLink"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo link de MP"}
-        />
-      </div>
-      </div>
-
-      <div className="flex text-black text-sm">
-      <div>
-
-      <h3>5to BOTON</h3>
-        <Input
-          type={"number"}
-          name="fifthButton"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo monto"}
-        />
-        <Input
-          type={"text"}
-          name="fifthLink"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo link de MP"}
-        />
-      </div>
+        <div>
+          <h3>3er BOTON</h3>
+          <Input
+            type={"number"}
+            name="thirdButton"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo monto"}
+          />
+          <Input
+            type={"text"}
+            name="thirdLink"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo link de MP"}
+          />
+        </div>
       </div>
 
       <div className="flex text-black text-sm">
-      <div>
-      <h3>6to BOTON</h3>
-        <Input
-          type={"number"}
-          name="sixthButton"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo monto"}
-        />
-        <Input
-          type={"text"}
-          name="sixthLink"
-          onChange={handleChange}
-          placeholder={"Ingrese nuevo link de MP"}
-        />
+        <div>
+          <h3>4to BOTON</h3>
+          <Input
+            type={"number"}
+            name="fourthButton"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo monto"}
+          />
+          <Input
+            type={"text"}
+            name="fourthLink"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo link de MP"}
+          />
+        </div>
       </div>
+
+      <div className="flex text-black text-sm">
+        <div>
+          <h3>5to BOTON</h3>
+          <Input
+            type={"number"}
+            name="fifthButton"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo monto"}
+          />
+          <Input
+            type={"text"}
+            name="fifthLink"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo link de MP"}
+          />
+        </div>
+      </div>
+
+      <div className="flex text-black text-sm">
+        <div>
+          <h3>6to BOTON</h3>
+          <Input
+            type={"number"}
+            name="sixthButton"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo monto"}
+          />
+          <Input
+            type={"text"}
+            name="sixthLink"
+            onChange={handleChange}
+            placeholder={"Ingrese nuevo link de MP"}
+          />
+        </div>
       </div>
 
       <Button

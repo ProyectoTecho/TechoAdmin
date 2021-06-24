@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "../Input";
 import Button from "../../Button";
 import { db } from "../../../firebase/client";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Transferencia() {
   const [nameBankTransfer, setNameBankTransfer] = useState("");
@@ -53,6 +55,15 @@ function Transferencia() {
     setAliasAccountTransfer("");
     setTitularAccountTransfer("");
     setCuitTitularTransfer("");
+    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  });
   };
 
   const getTransfer = async () => {
@@ -68,6 +79,8 @@ function Transferencia() {
   return (
     <>
       <div className="text-center m-5 space-y-6">
+      <ToastContainer></ToastContainer>
+
         <h1 className="font-bold underline">EDITAR DATOS BANCARIOS</h1>
       </div>
 
