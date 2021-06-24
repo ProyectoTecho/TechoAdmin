@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "../Input";
 import Button from "../../Button";
 import { db } from "../../../firebase/client";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Porcentajes = () => {
   const [firstInput, setFirstInput] = useState("");
@@ -10,6 +12,8 @@ const Porcentajes = () => {
   const [fourthInput, setFourthInput] = useState("");
 
   const [percent, setPercent] = useState("");
+
+
 
   useEffect(() => {
     /* cada vez que refresco la página o se actualiza un estado */
@@ -42,6 +46,15 @@ const Porcentajes = () => {
     setSecondInput("");
     setThirdInput("");
     setFourthInput("");
+    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  });
   };
 
   const getPercent = async () => {
@@ -56,6 +69,8 @@ const Porcentajes = () => {
 
   return (
     <div className="align-center text-center m-5 space-y-6">
+      <ToastContainer></ToastContainer>
+
       <h2 className="font-bold underline">EDITAR PORCENTAJES</h2>
 
       <div className="flex text-black text-sm">

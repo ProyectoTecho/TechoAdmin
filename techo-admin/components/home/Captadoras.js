@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "./Input";
 import Button from "../Button";
 import { db } from "../../firebase/client";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Captadoras() {
   const [data, setData] = useState({
@@ -74,10 +76,21 @@ function Captadoras() {
       fourthName: "",
       fourthLink: "",
     });
+    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  });
   };
 
   return (
     <div className="align-center text-center m-5 space-y-6">
+      <ToastContainer></ToastContainer>
+
       <h1 className="font-bold underline">EDITAR CAPTADORAS</h1>
       <p>
         Las fotos de las captadoras deben tener un tamaño menor a los 100 kb y
