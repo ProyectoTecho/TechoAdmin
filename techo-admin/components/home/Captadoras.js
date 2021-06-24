@@ -104,8 +104,9 @@ function Captadoras() {
         </a>
       </p>
 
+      <div clasName='flex justify-center'>
 
-      <div className="flex text-black text-sm">
+      <div className="text-black text-sm">
         <div>
           <h3>CAPTADORA 1</h3>
           <Input
@@ -123,7 +124,7 @@ function Captadoras() {
         </div>
       </div>
 
-      <div className="flex text-black text-sm">
+      <div className="text-black text-sm">
         <div>
           <h3>CAPTADORA 2</h3>
           <Input
@@ -141,7 +142,7 @@ function Captadoras() {
         </div>
       </div>
 
-      <div className="flex text-black text-sm">
+      <div className="text-black text-sm">
       <div>
           <h3>CAPTADORA 3</h3>
         <Input
@@ -159,7 +160,7 @@ function Captadoras() {
       </div>
       </div>
 
-      <div className="flex text-black text-sm">
+      <div className="text-black text-sm">
       <div>
           <h3>CAPTADORA 4</h3>
         <Input
@@ -197,6 +198,7 @@ function Captadoras() {
         }
       />
     </div>
+      </div>
   );
 }
 
