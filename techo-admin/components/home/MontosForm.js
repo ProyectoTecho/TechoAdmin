@@ -53,7 +53,7 @@ const MontosForm = () => {
 
   return (
     <div className="align-center text-center m-5 space-y-6">
-      <h1 className="font-bold underline">EDITAR MONTOS</h1>
+      <h2 className="font-bold underline">EDITAR MONTOS</h2>
 
       <div className="flex text-black text-sm">
         <div>

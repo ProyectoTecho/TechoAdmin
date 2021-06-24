@@ -42,7 +42,7 @@ function Modal() {
   };
 
   return (
-    <div className="rounded-md z-10 absolute  text-center mt-20 w-80 h-96  object-scale-down  bg-blue-500 py-4 px-4 sm:px-6 lg:px-8  ">
+    <div className="rounded-md z-10 absolute  text-center mt-20 w-80 h-96  object-scale-down  bg-blue-500 py-4 px-4 sm:px-6 lg:px-8">
     
       <div className="w-full pt-3 rounded-md space-y-8  border-2 border-white h-full">
         <h1 className="text-3xl text-black font-bold">Techo Admin</h1>

@@ -38,10 +38,10 @@ const Porcentajes = () => {
     } catch (error) {
       console.error(error);
     }
-    setFirstInput ("")
-    setSecondInput("")
-    setThirdInput("")
-    setFourthInput("")
+    setFirstInput("");
+    setSecondInput("");
+    setThirdInput("");
+    setFourthInput("");
   };
 
   const getPercent = async () => {
@@ -54,57 +54,78 @@ const Porcentajes = () => {
     });
   };
 
-  
   return (
-    <div className="align-center w-36 m-5 space-y-6">
-      <h1 className="font-bold">Editar Porcentajes</h1>
-      <Input
-        name="firstInput"
-        type={"number"}
-        value={firstInput}
-        onChange={(e) => setFirstInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"1er Monto"}
-      />
-      <Input
-        name="secondInput"
-        type={"number"}
-        value={secondInput}
-        onChange={(e) => setSecondInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"2do Monto"}
-      />
-      <Input
-        name="thirdInput"
-        type={"number"}
-        value={thirdInput}
-        onChange={(e) => setThirdInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"3er Monto"}
-      />
-      <Input
-        name="fourthInput"
-        type={"number"}
-        value={fourthInput}
-        onChange={(e) => setFourthInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"4to Monto"}
-      />
-      <Button
-        onClick={editOrCreatePercent}
-        content="Guardar cambios"
-        styles={
-          "ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
-        }
-        disabled={
-          firstInput === "" ||
-          secondInput === "" ||
-          thirdInput === "" ||
-          fourthInput === ""
-            ? true
-            : false
-        }
-      />
+    <div className="align-center text-center m-5 space-y-6">
+      <h2 className="font-bold underline">EDITAR PORCENTAJES</h2>
+
+      <div className="flex text-black text-sm">
+        <div>
+          <h3>1er MONTO</h3>
+          <Input
+            name="firstInput"
+            type={"number"}
+            value={firstInput}
+            onChange={(e) => setFirstInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+        </div>
+
+        <div className="flex text-black text-sm">
+        <div>
+          <h3>2do MONTO</h3>
+          <Input
+            name="secondInput"
+            type={"number"}
+            value={secondInput}
+            onChange={(e) => setSecondInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+      </div>
+      <div className="flex text-black text-sm">
+        <div>
+          <h3>3er MONTO</h3>
+          <Input
+            name="thirdInput"
+            type={"number"}
+            value={thirdInput}
+            onChange={(e) => setThirdInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+        </div>
+        
+        <div className="flex text-black text-sm">
+        <div>
+          <h3>4to MONTO</h3>
+          <Input
+            name="fourthInput"
+            type={"number"}
+            value={fourthInput}
+            onChange={(e) => setFourthInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+      </div>
+
+      <div className="flex">
+        <Button
+          onClick={editOrCreatePercent}
+          content="Guardar cambios"
+          styles={
+            "ml-5 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
+          }
+          disabled={
+            firstInput === "" ||
+            secondInput === "" ||
+            thirdInput === "" ||
+            fourthInput === ""
+              ? true
+              : false
+          }
+        />
+      </div>
     </div>
   );
 };
