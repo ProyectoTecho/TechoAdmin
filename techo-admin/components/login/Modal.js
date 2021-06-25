@@ -42,12 +42,13 @@ function Modal() {
   };
 
   return (
-    <div className="rounded-md min-h-full flex items-center justify-center  bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 z-50 mt-0">
-      <div className="max-w-md w-full space-y-8">
-        <h1 className="text-3xl font-medium">Techo Admin</h1>
+    <div className="rounded-md z-10 absolute  text-center mt-20 w-80 h-96  object-scale-down  bg-blue-500 py-4 px-4 sm:px-6 lg:px-8">
+    
+      <div className="w-full pt-3 rounded-md space-y-8  border-2 border-white h-full">
+        <h1 className="text-3xl text-black font-bold">Techo Admin</h1>
 
         <form className="mt-8 space-y-6" id="signInForm" method="POST">
-          <div className="rounded-md shadow-sm -space-y-px">
+          <div className="rounded-md shadow-sm -space-y-px border-none">
             <input
               type="email"
               className="w-4/5 h-12 rounded-full text-black"
@@ -58,7 +59,7 @@ function Modal() {
             />
           </div>
 
-          <div className="rounded-md shadow-sm -space-y-px">
+          <div className="rounded-md shadow-sm -space-y-px border-none">
             <input
               type="password"
               id="sigInPassword"

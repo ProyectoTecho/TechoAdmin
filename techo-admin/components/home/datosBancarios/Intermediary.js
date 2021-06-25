@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "../Input";
 import Button from "../../Button";
 import { db } from "../../../firebase/client";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Intermediary() {
   const [nameBankInterm, setNameBankInterm] = useState("");
@@ -38,6 +40,20 @@ function Intermediary() {
     } catch (error) {
       console.error(error);
     }
+    setNameBankInterm("")
+    setAddressBankInterm("")
+    setSwiftCodeInterm("")
+    setAccountNumberInterm("")
+    setLastSwift("")
+    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  });
   };
 
   const getIntermediary = async () => {
@@ -52,7 +68,9 @@ function Intermediary() {
 
 
   return (
-    <div>
+    <div className="align-center text-center m-5 space-y-6 border-white border-2">
+      <ToastContainer></ToastContainer>
+
       <h2 className="border-black">Intermediary Bank</h2>
 
       <div className="flex text-center text-black text-sm">

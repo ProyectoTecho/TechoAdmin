@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "../Input";
 import Button from "../../Button";
 import { db } from "../../../firebase/client";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Porcentajes = () => {
   const [firstInput, setFirstInput] = useState("");
@@ -10,6 +12,8 @@ const Porcentajes = () => {
   const [fourthInput, setFourthInput] = useState("");
 
   const [percent, setPercent] = useState("");
+
+
 
   useEffect(() => {
     /* cada vez que refresco la página o se actualiza un estado */
@@ -38,6 +42,19 @@ const Porcentajes = () => {
     } catch (error) {
       console.error(error);
     }
+    setFirstInput("");
+    setSecondInput("");
+    setThirdInput("");
+    setFourthInput("");
+    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  });
   };
 
   const getPercent = async () => {
@@ -50,57 +67,80 @@ const Porcentajes = () => {
     });
   };
 
-  
   return (
-    <div className="align-center w-36 m-5 space-y-6">
-      <h1 className="font-bold">Editar Porcentajes</h1>
-      <Input
-        name="firstInput"
-        type={"number"}
-        value={firstInput}
-        onChange={(e) => setFirstInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"1er Monto"}
-      />
-      <Input
-        name="secondInput"
-        type={"number"}
-        value={secondInput}
-        onChange={(e) => setSecondInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"2do Monto"}
-      />
-      <Input
-        name="thirdInput"
-        type={"number"}
-        value={thirdInput}
-        onChange={(e) => setThirdInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"3er Monto"}
-      />
-      <Input
-        name="fourthInput"
-        type={"number"}
-        value={fourthInput}
-        onChange={(e) => setFourthInput(e.target.value)}
-        placeholder={"Ingrese nuevo monto"}
-        label={"4to Monto"}
-      />
-      <Button
-        onClick={editOrCreatePercent}
-        content="Guardar cambios"
-        styles={
-          "ml-3 rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
-        }
-        disabled={
-          firstInput === "" ||
-          secondInput === "" ||
-          thirdInput === "" ||
-          fourthInput === ""
-            ? true
-            : false
-        }
-      />
+    <div className="align-center text-center m-5 space-y-6">
+      <ToastContainer></ToastContainer>
+
+      <h2 className="font-bold underline">EDITAR PORCENTAJES</h2>
+
+      <div className="flex text-black text-sm">
+        <div>
+          <h3>1er MONTO</h3>
+          <Input
+            name="firstInput"
+            type={"number"}
+            value={firstInput}
+            onChange={(e) => setFirstInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+        </div>
+
+        <div className="flex text-black text-sm">
+        <div>
+          <h3>2do MONTO</h3>
+          <Input
+            name="secondInput"
+            type={"number"}
+            value={secondInput}
+            onChange={(e) => setSecondInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+      </div>
+      <div className="flex text-black text-sm">
+        <div>
+          <h3>3er MONTO</h3>
+          <Input
+            name="thirdInput"
+            type={"number"}
+            value={thirdInput}
+            onChange={(e) => setThirdInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+        </div>
+        
+        <div className="flex text-black text-sm">
+        <div>
+          <h3>4to MONTO</h3>
+          <Input
+            name="fourthInput"
+            type={"number"}
+            value={fourthInput}
+            onChange={(e) => setFourthInput(e.target.value)}
+            placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+      </div>
+
+      
+        <Button
+          onClick={editOrCreatePercent}
+          content="Guardar cambios"
+          styles={
+            "rounded whitespace-nowrap group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-2.5 disabled:opacity-50"
+          }
+          disabled={
+            firstInput === "" ||
+            secondInput === "" ||
+            thirdInput === "" ||
+            fourthInput === ""
+              ? true
+              : false
+          }
+        />
+      
     </div>
   );
 };

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Input from "../Input";
 import Button from "../../Button";
 import { db } from "../../../firebase/client";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Abroad() {
   const [nameBankAbroad, setNameBankAbroad] = useState("");
@@ -35,6 +37,19 @@ function Abroad() {
     } catch (error) {
       console.error(error);
     }
+    setNameBankAbroad("")
+    setSwiftCodeAbroad("")
+    setBeneficiaryNameAbroad("")
+    setBeneficiaryAccountAbroad("")
+    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  });
   };
 
   const getAbroad = async () => {
@@ -48,7 +63,9 @@ function Abroad() {
   };
 
   return (
-    <div>
+    <div className="align-center text-center m-5 space-y-6 border-white border-2">
+      <ToastContainer></ToastContainer>
+
       <h2 className="border-black">Bank transfer from abroad</h2>
       <h3>Beneficiary Bank</h3>
 

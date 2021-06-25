@@ -1,8 +1,8 @@
 function Logintext() {
     return (
         <div>
-            <h1 className="text-white text-4xl font-extrabold">ADMIN</h1>
-            <p>Ingreso solo para administradores</p>
+            <h1 className="text-white text-6xl font-extrabold">ADMIN</h1>
+            <p className="text-black underline mt-4">Ingreso solo para administradores</p>
         </div>
     )
 }
