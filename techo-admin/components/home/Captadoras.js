@@ -203,3 +203,5 @@ function Captadoras() {
 }
 
 export default Captadoras;
+
+

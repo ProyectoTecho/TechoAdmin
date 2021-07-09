@@ -2,13 +2,16 @@ import React, { useState, useEffect } from "react";
 import Input from "./Input";
 import Button from "../Button";
 import { db } from "../../firebase/client";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MontosForm = () => {
   const [firstInput, setFirstInput] = useState("");
   const [secondInput, setSecondInput] = useState("");
   const [thirdInput, setThirdInput] = useState("");
+  const [firstTextField, setFirstTextField] = useState("");
+  const [secondTextField, setSecondTextField] = useState("");
+  const [thirdTextField, setThirdTextField] = useState("");
 
   const [montos, setMontos] = useState("");
 
@@ -40,7 +43,7 @@ const MontosForm = () => {
     setFirstInput("");
     setSecondInput("");
     setThirdInput("");
-    toast('CAMBIOS REALIZADOS!! 🎉🎉', {
+    toast("CAMBIOS REALIZADOS!! 🎉🎉", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -48,7 +51,7 @@ const MontosForm = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-  });
+    });
   };
 
   const getMontos = async () => {
@@ -81,6 +84,19 @@ const MontosForm = () => {
         </div>
       </div>
 
+      <div className="flex text-black text-sm">
+        <div>
+          <h3 className="">1er Texto</h3>
+          <textarea
+            name="firstTextField"
+            type={"text"}
+            value={firstTextField}
+            onChange={(e) => setFirstTextField(e.target.value)}
+            placeholder={"Ingrese nuevo texto"}
+          />
+        </div>
+      </div>
+
       <div className="flex  text-black text-sm">
         <div>
           <h3>2do MONTO</h3>
@@ -94,6 +110,19 @@ const MontosForm = () => {
         </div>
       </div>
 
+      <div className="flex text-black text-sm">
+        <div>
+          <h3 className="">2do Texto</h3>
+          <textarea
+            name="secondTextField"
+            type={"text"}
+            value={secondTextField}
+            onChange={(e) => setSecondTextField(e.target.value)}
+            placeholder={"Ingrese nuevo texto"}
+          />
+        </div>
+      </div>
+
       <div className="flex  text-black text-sm">
         <div>
           <h3>3er MONTO</h3>
@@ -103,6 +132,19 @@ const MontosForm = () => {
             value={thirdInput}
             onChange={(e) => setThirdInput(e.target.value)}
             placeholder={"Ingrese nuevo monto"}
+          />
+        </div>
+      </div>
+
+      <div className="flex text-black text-sm">
+        <div>
+          <h3 className="">3er Texto</h3>
+          <textarea
+            name="thirdTextField"
+            type={"text"}
+            value={thirdTextField}
+            onChange={(e) => setThirdTextField(e.target.value)}
+            placeholder={"Ingrese nuevo texto"}
           />
         </div>
       </div>
